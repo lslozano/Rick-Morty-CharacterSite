@@ -1,0 +1,62 @@
+nav {
+  align-items: center;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  position: fixed;
+  width: 100%;
+}
+
+nav h3, li {
+  font-family: 'Pangolin', cursive, sans-serif;
+}
+
+nav h3 {
+  font-size: 1rem;
+}
+
+nav li {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  nav h3 {
+    font-size: 1.3rem
+  }
+
+  nav li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  nav h3 {
+    font-size: 1.5rem
+  }
+
+  nav li {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  nav h3 {
+    font-size: 2rem
+  }
+
+  nav li {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px)  {
+  nav h3 {
+    font-size: 2.5rem
+  }
+
+  nav li {
+    font-size: 1.8rem;
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import About from './components/About';
 import Home from './components/Home';
-import Nav from './components/Nav';
+import Navbar from './components/Navbar';
 import Characters from './components/Characters';
 import Character from './components/Character'
 import { 
@@ -14,9 +14,9 @@ function App() {
   return (
     // Router - Renders out the component based on the URL.
     <Router>
+      <Navbar />
+      {/* Switch - stops at first url match.*/}
       <div className="App">
-        <Nav />
-        {/* Switch - stops at first url match.*/}
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>

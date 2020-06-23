@@ -1,29 +1,16 @@
-/*******************TAG SELECTORS*****************/
-
-nav {
-  align-items: center;
-  background: rgb(73, 70, 82);
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  min-height: 10vh;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 /*******************CLASS SELECTORS***************/
 
 .App {
   text-align: center;
+  padding-top: 100px;
 }
 
-.nav-links {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  width: 50%;
-}
-
-.router-link {
-  color: white;
-  text-decoration: none;
-}
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pangolin', cursive;
+*/
