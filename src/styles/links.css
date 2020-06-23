@@ -1,0 +1,25 @@
+.nav-links {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 15px 0 0;
+  width: 50%;
+}
+
+.router-link {
+  color: white;
+  text-decoration: none;
+}
+
+.router-link:hover {
+  animation: color-change 1s infinite;
+  text-decoration: none;
+}
+
+@keyframes color-change {
+  0% { color: #fff; }
+  50% { color: #208d45 }
+  100% {color: #fff}
+}
+
