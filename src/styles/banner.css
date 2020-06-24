@@ -32,9 +32,14 @@
   width: 100%;
 }
 
+.row {
+  margin: 0;
+}
+
 #banner {
   background-color:#158b44;
   justify-content: left;
+  width: 100%;
 }
 
 /************MEDIA QUERIES**********/
