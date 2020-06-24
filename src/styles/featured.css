@@ -1,6 +1,6 @@
 .loading {
   font-family: 'Pangolin', sans-serif;
-  font-size: 1rem;
+  font-size: 3rem;
   padding: 50px 50px;
   text-align: center;
 }
@@ -8,4 +8,36 @@
 .loading img {
   margin-top: 35px;
   width: 100%;
+}
+
+.carousel-item {
+  width: 60%;
+}
+
+.carousel-item img {
+  border-radius: 100%;
+  margin: 0 160px;
+  width: 65%;
+}
+
+.carousel-indicators {
+  margin: 0;
+  top: 220px;
+  filter: invert(1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+#featured {
+  padding: 50px 0;
+}
+
+#featured h2 {
+  font-family: 'Pangolin', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-align: center;
 }

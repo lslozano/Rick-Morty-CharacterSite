@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Carousel } from 'react-bootstrap';
 import '../../styles/featured.css';
 
@@ -28,37 +29,43 @@ function Featured() {
     )
   } else {
     return (
-      <Container fluid>
-        <section className="loading">
-          <h1>Featured Characters</h1>
-          <img src="https://media0.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif" alt="Loading information" />
+      <Container fluid id="featured">
+        <section>
+          <h2>Featured</h2>
+          <Carousel>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[0].id}`}>
+                <img src={characters[0].image} alt="Rick Sánchez" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[1].id}`}>
+                <img src={characters[1].image} alt="Morty Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[2].id}`}>
+                <img src={characters[2].image} alt="Summer Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[3].id}`}>
+                <img src={characters[3].image} alt="Beth Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[4].id}`}>
+                <img src={characters[4].image} alt="Jerry Smith" />
+              </Link>
+            </Carousel.Item>
+          </Carousel>
         </section>
       </Container>
     )
   }
 }
 
+
+
 export default Featured
 
-/*
-
-
-      <Carousel>
-        <Carousel.Item>
-          <img src="https://media0.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif" alt="Loading information" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src="https://media0.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif" alt="Loading information" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-
-
-*/
