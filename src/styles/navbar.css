@@ -7,10 +7,11 @@ nav {
   min-height: 10vh;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 nav h3, li {
-  font-family: 'Pangolin', cursive, sans-serif;
+  font-family: 'Pangolin', sans-serif;
 }
 
 nav h3 {
@@ -21,6 +22,7 @@ nav li {
   font-size: 0.8rem;
 }
 
+/************MEDIA QUERIES**********/
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   nav h3 {
     font-size: 1.3rem

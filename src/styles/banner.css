@@ -1,0 +1,127 @@
+.big-heading {
+  color: #fff;
+  font-family: 'Pangolin', sans-serif;
+  font-size: 4.5rem;
+  padding-top: 50px;
+}
+
+.banner-row {
+  padding-top: 20px;
+}
+
+.btn {
+  background: #12b0c9;
+  margin-top: 25px;
+  width: 40%;
+}
+
+.btn:hover {
+  border-color: #d5e68b;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.cta {
+  padding: 0 35px;
+}
+
+.rick-morty-logo {
+  padding: 0 20px;
+  width: 100%;
+}
+
+#banner {
+  background-color:#158b44;
+  justify-content: left;
+}
+
+/************MEDIA QUERIES**********/
+@media only screen and (min-width: 554px) and (max-width: 767px) {
+  .big-heading {
+    font-size: 5rem;
+  }
+  
+  .btn {
+    margin-top: 25px;
+    width: 35%;
+  }
+  
+  .cta {
+    padding: 0 50px;
+  }
+  
+  .rick-morty-logo {
+    padding: 0 35px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .banner-row {
+    padding-bottom: 30px;
+  }
+
+  .big-heading {
+    font-size: 3rem;
+  }
+  
+  .btn {
+    margin-top: 25px;
+    width: 60%;
+  }
+  
+  .cta {
+    padding-left: 75px;
+  }
+  
+  .rick-morty-logo {
+    padding-right: 50px;
+    width: 110%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .banner-row {
+    padding-bottom: 50px;
+  }
+
+  .big-heading {
+    font-size: 4.5rem;
+  }
+  
+  .btn {
+    margin-top: 25px;
+    width: 50%;
+  }
+  
+  .cta {
+    padding-left: 85px;
+  }
+  
+  .rick-morty-logo {
+    padding-right: 50px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px)  {
+  .banner-row {
+    padding-bottom: 50px;
+  }
+
+  .big-heading {
+    font-size: 5rem;
+    padding-top: 75px;
+  }
+  
+  .btn {
+    margin-top: 25px;
+    width: 45%;
+  }
+  
+  .cta {
+    padding-left: 125px;
+  }
+}
