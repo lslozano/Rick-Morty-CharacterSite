@@ -23,6 +23,8 @@ nav li {
 }
 
 /************MEDIA QUERIES**********/
+
+/* MOBILE */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   nav h3 {
     font-size: 1.2rem;
@@ -30,21 +32,23 @@ nav li {
   }
 
   nav li {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 768px) {
+/* IPADS & TABLETS */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   nav h3 {
-    font-size: 1.3rem
+    font-size: 1.4rem
   }
 
   nav li {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+/* SMALL SCREENS AND LAPTOPS */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   nav h3 {
     font-size: 1.5rem
   }
@@ -54,7 +58,8 @@ nav li {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* DESKTOPS AND LARGE SCREENS */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
   nav h3 {
     font-size: 2rem
   }
@@ -64,7 +69,7 @@ nav li {
   }
 }
 
-@media only screen and (min-width: 1200px)  {
+@media only screen and (min-width: 1201px)  {
   nav h3 {
     font-size: 2.5rem
   }
