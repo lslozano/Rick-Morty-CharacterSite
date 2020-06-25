@@ -15,26 +15,15 @@ nav h3, li {
 }
 
 nav h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  padding-top: 10px;
 }
 
 nav li {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /************MEDIA QUERIES**********/
-
-/* MOBILE */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  nav h3 {
-    font-size: 1.2rem;
-    padding-top: 10px;
-  }
-
-  nav li {
-    font-size: 0.8rem;
-  }
-}
 
 /* IPADS & TABLETS */
 @media only screen and (min-width: 481px) and (max-width: 768px) {

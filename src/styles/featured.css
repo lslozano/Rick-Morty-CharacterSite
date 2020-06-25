@@ -1,6 +1,6 @@
 .loading {
   font-family: 'Pangolin', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 50px 50px;
   text-align: center;
 }
@@ -10,20 +10,21 @@
   width: 100%;
 }
 
+/*
 .carousel-item {
-  width: 60%;
+  margin: 0;
+  padding-left: 100px;
+  width: 50%;
 }
 
 .carousel-item img {
   border-radius: 100%;
-  margin: 0 160px;
-  width: 65%;
+  width: 200%;
 }
+*/
 
 .carousel-indicators {
-  margin: 0;
-  top: 220px;
-  filter: invert(1);
+  visibility: hidden;
 }
 
 .carousel-control-prev-icon,
@@ -32,12 +33,92 @@
 }
 
 #featured {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 #featured h2 {
   font-family: 'Pangolin', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
   text-align: center;
+}
+
+/************MEDIA QUERIES**********/
+
+/* MOBILE */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .big-heading {
+    font-size: 3rem;
+  }
+  
+  .cta {
+    padding: 0 30px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    width: 64%;
+  }
+  
+}
+
+/* IPADS AND TABLETS */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .big-heading {
+    font-size: 3.3rem;
+    padding-top: 25px;
+  }
+  
+  .cta {
+    padding: 0 0 30px 45px;
+  }
+
+  .btn {
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+
+/* SMALL SCREENS AND LAPTOPS */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .big-heading {
+    font-size: 4rem;
+    padding-top: 25px;
+  }
+
+  .cta {
+    padding: 0 0 30px 60px;
+  }
+}
+
+/* DESKTOPS AND LARGE SCREENS */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .big-heading {
+    font-size: 4.3rem;
+    padding-top: 50px;
+  }
+
+  .cta {
+    padding: 0 0 40px 70px;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
+
+/* EXTRA LARGE SCREENS AND TV */
+@media only screen and (min-width: 1201px) {
+  .big-heading {
+    font-size: 5rem;
+    padding-top: 70px;
+  }
+
+  .cta {
+    padding: 0 0 50px 80px;
+  }
+
+  .btn {
+    width: 35%;
+  }
 }

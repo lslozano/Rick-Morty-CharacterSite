@@ -35,8 +35,11 @@ function Featured() {
           <Carousel>
             <Carousel.Item>
               <Link to={`/characters/${characters[0].id}`}>
-                <img src={characters[0].image} alt="Rick Sánchez" />
+                <img className="d-block w-100" src={characters[0].image} alt="Rick Sánchez" />
               </Link>
+              <Carousel.Caption>
+                <h3>Rick Sánchez</h3>
+              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <Link to={`/characters/${characters[1].id}`}>
@@ -65,7 +68,27 @@ function Featured() {
   }
 }
 
-
-
 export default Featured
 
+/*
+            <Carousel.Item>
+              <Link to={`/characters/${characters[1].id}`}>
+                <img src={characters[1].image} alt="Morty Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[2].id}`}>
+                <img src={characters[2].image} alt="Summer Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[3].id}`}>
+                <img src={characters[3].image} alt="Beth Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[4].id}`}>
+                <img src={characters[4].image} alt="Jerry Smith" />
+              </Link>
+            </Carousel.Item>
+*/
