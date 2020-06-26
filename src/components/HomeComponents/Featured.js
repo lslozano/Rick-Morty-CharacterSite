@@ -20,8 +20,8 @@ function Featured() {
 
   if (characters.length < 20 ) {
     return (
-      <Container fluid>
-        <section className="loading">
+      <Container fluid className="loading">
+        <section>
           <h1>Loading...</h1>
           <img src="https://media0.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif" alt="Loading information" />
         </section>
@@ -35,9 +35,39 @@ function Featured() {
           <Carousel>
             <Carousel.Item>
               <Link to={`/characters/${characters[0].id}`}>
-                <img src={characters[0].image} alt="Rick Sánchez" />
+                <img className="d-block w-50" src={characters[0].image} alt="Rick Sánchez" />
               </Link>
             </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[1].id}`}>
+                <img className="d-block w-50" src={characters[1].image} alt="Morty Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[2].id}`}>
+                <img className="d-block w-50" src={characters[2].image} alt="Summer Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[3].id}`}>
+                <img className="d-block w-50" src={characters[3].image} alt="Beth Smith" />
+              </Link>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to={`/characters/${characters[4].id}`}>
+                <img className="d-block w-50" src={characters[4].image} alt="Jerry Smith" />
+              </Link>
+            </Carousel.Item>
+          </Carousel>
+        </section>
+      </Container>
+    )
+  }
+}
+
+export default Featured
+
+/*
             <Carousel.Item>
               <Link to={`/characters/${characters[1].id}`}>
                 <img src={characters[1].image} alt="Morty Smith" />
@@ -58,14 +88,4 @@ function Featured() {
                 <img src={characters[4].image} alt="Jerry Smith" />
               </Link>
             </Carousel.Item>
-          </Carousel>
-        </section>
-      </Container>
-    )
-  }
-}
-
-
-
-export default Featured
-
+*/
