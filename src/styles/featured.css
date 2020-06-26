@@ -1,4 +1,5 @@
 .loading {
+  color: #fff;
   font-family: 'Pangolin', sans-serif;
   font-size: 2.5rem;
   padding: 50px 50px;
@@ -10,33 +11,24 @@
   width: 100%;
 }
 
-/*
-.carousel-item {
-  margin: 0;
-  padding-left: 100px;
-  width: 50%;
-}
-
-.carousel-item img {
-  border-radius: 100%;
-  width: 200%;
-}
-*/
-
 .carousel-indicators {
   visibility: hidden;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
+.w-50 {
+  width: 100%!important;
+}
+
+.d-block {
+  padding: 0 80px;
 }
 
 #featured {
-  padding: 20px 0;
+  padding: 20px 0 15px 0;
 }
 
 #featured h2 {
+  color: #fff;
   font-family: 'Pangolin', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 15px;
@@ -45,80 +37,64 @@
 
 /************MEDIA QUERIES**********/
 
-/* MOBILE */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .big-heading {
-    font-size: 3rem;
-  }
-  
-  .cta {
-    padding: 0 30px;
-  }
-
-  .btn {
-    margin-top: 10px;
-    width: 64%;
-  }
-  
-}
-
 /* IPADS AND TABLETS */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .big-heading {
-    font-size: 3.3rem;
-    padding-top: 25px;
-  }
-  
-  .cta {
-    padding: 0 0 30px 45px;
+  #featured h2 {
+    font-size: 3rem;
   }
 
-  .btn {
-    margin-top: 20px;
-    width: 50%;
+  .w-50 {
+    width: 100%!important;
+  }
+  
+  .d-block {
+    padding: 0 150px;
   }
 }
 
 /* SMALL SCREENS AND LAPTOPS */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .big-heading {
-    font-size: 4rem;
-    padding-top: 25px;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #featured h2 {
+    font-size: 3.3rem;
   }
 
-  .cta {
-    padding: 0 0 30px 60px;
+  .w-50 {
+    width: 100%!important;
+  }
+  
+  .d-block {
+    padding: 0 300px;
   }
 }
 
 /* DESKTOPS AND LARGE SCREENS */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .big-heading {
-    font-size: 4.3rem;
-    padding-top: 50px;
+  #featured h2 {
+    font-size: 3.6rem;
+    margin-bottom: 30px;
   }
 
-  .cta {
-    padding: 0 0 40px 70px;
+  .w-50 {
+    width: 100%!important;
   }
-
-  .btn {
-    width: 40%;
+  
+  .d-block {
+    padding: 0 390px;
   }
 }
 
 /* EXTRA LARGE SCREENS AND TV */
 @media only screen and (min-width: 1201px) {
-  .big-heading {
-    font-size: 5rem;
-    padding-top: 70px;
+  #featured h2 {
+    font-size: 4rem;
+    margin-bottom: 45px;
   }
 
-  .cta {
-    padding: 0 0 50px 80px;
+  .w-50 {
+    width: 100%!important;
   }
-
-  .btn {
-    width: 35%;
+  
+  .d-block {
+    padding: 0 450px;
   }
 }
