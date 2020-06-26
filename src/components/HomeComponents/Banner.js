@@ -6,8 +6,8 @@ import '../../styles/banner.css';
 function Banner() {
   return (
     <>
-    <Container fluid>
-      <section id="banner">
+    <Container fluid id="banner">
+      <section>
         <Row className="banner-row">
           <Col className="cta" xs={12} md={6}>
             <h1 className="big-heading">All Rick and Morty characters in one place!</h1>

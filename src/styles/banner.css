@@ -1,7 +1,7 @@
 .big-heading {
   color: #fff;
   font-family: 'Pangolin', sans-serif;
-  font-size: 4.5rem;
+  font-size: 3rem;
   padding-top: 50px;
 }
 
@@ -11,117 +11,92 @@
 
 .btn {
   background: #12b0c9;
-  margin-top: 25px;
-  width: 40%;
+  margin-top: 10px;
+  width: 64%;
 }
 
 .btn:hover {
   border-color: #d5e68b;
 }
 
-.container-fluid {
-  padding: 0;
-}
-
 .cta {
-  padding: 0 35px;
+  padding: 0 30px;
 }
 
 .rick-morty-logo {
-  padding: 0 20px;
+  padding: 0 35px;
   width: 100%;
 }
 
+.row {
+  margin: 0;
+}
+
 #banner {
-  background-color:#158b44;
   justify-content: left;
+  padding: 0;
+  width: 100%;
 }
 
 /************MEDIA QUERIES**********/
-@media only screen and (min-width: 554px) and (max-width: 767px) {
+
+/* IPADS AND TABLETS */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .big-heading {
-    font-size: 5rem;
-  }
-  
-  .btn {
-    margin-top: 25px;
-    width: 35%;
+    font-size: 3.3rem;
+    padding-top: 25px;
   }
   
   .cta {
-    padding: 0 50px;
-  }
-  
-  .rick-morty-logo {
-    padding: 0 35px;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .banner-row {
-    padding-bottom: 30px;
+    padding: 0 0 30px 45px;
   }
 
-  .big-heading {
-    font-size: 3rem;
-  }
-  
   .btn {
-    margin-top: 25px;
-    width: 60%;
-  }
-  
-  .cta {
-    padding-left: 75px;
-  }
-  
-  .rick-morty-logo {
-    padding-right: 50px;
-    width: 110%;
-  }
-}
-
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .banner-row {
-    padding-bottom: 50px;
-  }
-
-  .big-heading {
-    font-size: 4.5rem;
-  }
-  
-  .btn {
-    margin-top: 25px;
+    margin-top: 20px;
     width: 50%;
   }
-  
-  .cta {
-    padding-left: 85px;
+}
+
+/* SMALL SCREENS AND LAPTOPS */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .big-heading {
+    font-size: 4rem;
+    padding-top: 25px;
   }
-  
-  .rick-morty-logo {
-    padding-right: 50px;
-    width: 100%;
+
+  .cta {
+    padding: 0 0 30px 60px;
   }
 }
 
-@media only screen and (min-width: 1200px)  {
-  .banner-row {
-    padding-bottom: 50px;
+/* DESKTOPS AND LARGE SCREENS */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .big-heading {
+    font-size: 4.3rem;
+    padding-top: 50px;
   }
 
+  .cta {
+    padding: 0 0 40px 70px;
+  }
+
+  .btn {
+    width: 40%;
+  }
+}
+
+/* EXTRA LARGE SCREENS AND TV */
+@media only screen and (min-width: 1201px) {
   .big-heading {
     font-size: 5rem;
-    padding-top: 75px;
+    padding-top: 70px;
   }
-  
-  .btn {
-    margin-top: 25px;
-    width: 45%;
-  }
-  
+
   .cta {
-    padding-left: 125px;
+    padding: 0 0 50px 80px;
+  }
+
+  .btn {
+    width: 35%;
   }
 }
