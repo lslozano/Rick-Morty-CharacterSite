@@ -7,12 +7,12 @@
   width: 50%;
 }
 
-.router-link {
+.link {
   color: white;
   text-decoration: none;
 }
 
-.router-link:hover {
+.link:hover {
   animation: color-change 1s infinite;
   text-decoration: none;
 }
@@ -22,4 +22,3 @@
   50% { color: #208d45 }
   100% {color: #fff}
 }
-
