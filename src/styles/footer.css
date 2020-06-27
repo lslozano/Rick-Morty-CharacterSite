@@ -4,20 +4,93 @@ h3, p {
   margin: 0;
 }
 
-.disclaimer {
-  font-size: 0.6rem;
-  text-align: left;
-  padding: 0 30px;
-  margin-bottom: 0;
+.contact-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 5% 13%;
 }
 
-.fab {
-  color: #fff;
-  margin: 20px;
-  padding: 0 24px;
+.contact-icon:hover {
+  animation: color-change 1s infinite;
+  text-decoration: none;
+}
+
+@keyframes color-change {
+  0% { color: #fff; }
+  50% { color: #208d45 }
+  100% {color: #fff}
+}
+
+.disclaimer {
+  font-size: 0.7rem;
+  text-align: left;
+  margin-bottom: 0;
 }
 
 #footer {
   background-color: #000;
   color: #fff;
+  padding: 5% 5%;
+}
+
+/************MEDIA QUERIES**********/
+
+/* IPADS AND TABLETS */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h3, p {
+    font-size: 1.2rem;
+  }
+
+  .contact-icon {
+    font-size: 2rem;
+  }
+
+  .disclaimer {
+  font-size: 0.9rem;
+  }
+}
+
+/* SMALL SCREENS AND LAPTOPS */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  h3, p {
+    font-size: 1.4rem;
+  }
+
+  .contact-icon {
+    font-size: 2.2rem;
+  }
+
+  .disclaimer {
+  font-size: 1.1rem;
+  }
+}
+
+/* DESKTOPS AND LARGE SCREENS */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  h3, p {
+    font-size: 1.7rem;
+  }
+
+  .contact-icon {
+    font-size: 2.4rem;
+  }
+
+  .disclaimer {
+  font-size: 1.3rem;
+  }
+}
+
+/* EXTRA LARGE SCREENS AND TV */
+@media only screen and (min-width: 1201px) {
+  h3, p {
+    font-size: 1.9rem;
+  }
+
+  .contact-icon {
+    font-size: 2.6rem;
+  }
+
+  .disclaimer {
+  font-size: 1.4rem;
+  }
 }

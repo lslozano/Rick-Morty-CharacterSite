@@ -58,6 +58,7 @@ nav li {
   }
 }
 
+/* EXTRA LARGE SCREENS AND TV */
 @media only screen and (min-width: 1201px)  {
   nav h3 {
     font-size: 2.5rem
