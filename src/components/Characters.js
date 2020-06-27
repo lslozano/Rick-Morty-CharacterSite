@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Button, Card, Container } from 'react-bootstrap';
+import { Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import '../styles/character.css';
 
@@ -23,7 +23,7 @@ function Characters() {
     setCharacters(characters.results)
   }
 
-  if (characters.length < 20 ) {
+ // if (characters.length < 20 ) {
     return (
       <Container fluid className="loading">
         <section>
@@ -32,12 +32,15 @@ function Characters() {
         </section>
       </Container>
     )
-  } else {
+  /*} else {
     return (
       <div id="characters">
-      <h1>Characters Page</h1>
+      <h1>Characters</h1>
+        <Container fluid>
+        <Row>
       {characters.map(character => (
-        <Card key={character.id}>
+        <Col md="6" lg="4" xl="3">
+        <Card className="text-center" key={character.id}>
           <Card.Img variant="top" src={character.image} />
           <Card.Body>
             <Card.Title>{character.name}</Card.Title>
@@ -52,10 +55,13 @@ function Characters() {
             </Button>
           </Card.Body>
         </Card>
+        </Col>
       ))}
+        </Row>
+        </Container>
     </div>
     )
-  }
+  }*/
 }
 
 export default Characters;
