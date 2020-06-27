@@ -23,7 +23,7 @@ function Characters() {
     setCharacters(characters.results)
   }
 
- // if (characters.length < 20 ) {
+  if (characters.length < 20 ) {
     return (
       <Container fluid className="loading">
         <section>
@@ -32,36 +32,36 @@ function Characters() {
         </section>
       </Container>
     )
-  /*} else {
+  } else {
     return (
       <div id="characters">
       <h1>Characters</h1>
-        <Container fluid>
+      <Container fluid>
         <Row>
-      {characters.map(character => (
-        <Col md="6" lg="4" xl="3">
-        <Card className="text-center" key={character.id}>
-          <Card.Img variant="top" src={character.image} />
-          <Card.Body>
-            <Card.Title>{character.name}</Card.Title>
-            <Card.Text>
-              Gender: {character.gender} <br />
-              Species: {character.species} <br />
-              Origin: {character.origin.name} <br />
-              Status: {character.status}
-            </Card.Text>
-            <Button variant="primary">
-              <Link to={`/characters/${character.id}`}>More details</Link>
-            </Button>
-          </Card.Body>
-        </Card>
-        </Col>
-      ))}
+          {characters.map(character => (
+            <Col md="6" lg="4" xl="3">
+              <Card className="text-center" key={character.id}>
+              <Card.Img variant="top" src={character.image} />
+                <Card.Body>
+                  <Card.Title>{character.name}</Card.Title>
+                  <Card.Text>
+                    Gender: {character.gender} <br />
+                    Species: {character.species} <br />
+                    Origin: {character.origin.name} <br />
+                    Status: {character.status}
+                  </Card.Text>
+                  <Button variant="primary">
+                    <Link to={`/characters/${character.id}`}>Details</Link>
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
-        </Container>
+      </Container>
     </div>
     )
-  }*/
+  }
 }
 
 export default Characters;
