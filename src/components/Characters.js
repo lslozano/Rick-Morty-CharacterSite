@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
+import Footer from './HomeComponents/Footer';
 import { Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import '../styles/character.css';
+//import '../styles/footer.css';
 
 // useState - Holds the information we are getting from an API. 
 // useEffect - Runs that fetch call when our component mounts.
@@ -59,6 +61,7 @@ function Characters() {
           ))}
         </Row>
       </Container>
+      <Footer />
     </div>
     )
   }
