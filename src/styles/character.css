@@ -1,0 +1,16 @@
+#characters {
+  background-color: #158b44;;
+}
+
+.loading {
+  color: #fff;
+  font-family: 'Pangolin', sans-serif;
+  font-size: 2.5rem;
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.card {
+  margin: auto;
+  width: 80%;
+}
