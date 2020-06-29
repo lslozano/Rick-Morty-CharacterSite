@@ -17,16 +17,16 @@ function App() {
     <Router>
       <Navbar />
       {/* Switch - stops at first url match.*/}
-      <div className="App">
+      <section id="App">
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/characters" component={Characters}/>
           {/* Using colon and a name means it is a parameter. It receives an argument. */}
           <Route exact path="/characters/:id" component={Character}/>
+          <Route component={NotFound} />
         </Switch>
-        <Route component={NotFound} />
-      </div>
+      </section>
     </Router>
   );
 }
