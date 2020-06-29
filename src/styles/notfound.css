@@ -1,4 +1,4 @@
-img {
+#notfound img {
   margin-top: 35px;
   width: 100%;
 }
@@ -22,7 +22,7 @@ img {
 
 /* IPADS AND TABLETS */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  img {
+  #notfound img {
     margin-top: 40px;
     width: 50%;
   }
@@ -38,7 +38,7 @@ img {
 
 /* SMALL SCREENS AND LAPTOPS */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  img {
+  #notfound img {
     margin-top: 150px;
     width: 63%;
   }
@@ -55,7 +55,7 @@ img {
 
 /* DESKTOPS AND LARGE SCREENS */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  img {
+  #notfound img {
     margin-top: 150px;
     width: 80%;
   }
@@ -72,7 +72,7 @@ img {
 
 /* EXTRA LARGE SCREENS AND TV */
 @media only screen and (min-width: 1201px) {
-  img {
+  #notfound img {
     margin-top: 150px;
     width: 90%;
   }
