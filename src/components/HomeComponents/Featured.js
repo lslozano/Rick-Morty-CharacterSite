@@ -18,7 +18,7 @@ function Featured() {
     setCharacters(characters.results)
   }
 
-  if (characters.length < 20 ) {
+  if (characters.length < 5 ) {
     return (
       <Container fluid className="loading">
         <section>
