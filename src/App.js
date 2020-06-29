@@ -4,7 +4,8 @@ import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Characters from './components/Characters';
-import Character from './components/Character'
+import Character from './components/Character';
+import NotFound from './components/NotFound';
 import { 
   BrowserRouter as Router, 
   Switch, Route 
@@ -24,6 +25,7 @@ function App() {
           {/* Using colon and a name means it is a parameter. It receives an argument. */}
           <Route exact path="/characters/:id" component={Character}/>
         </Switch>
+        <Route component={NotFound} />
       </div>
     </Router>
   );
