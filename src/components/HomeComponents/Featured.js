@@ -14,11 +14,10 @@ function Featured() {
     const data = await fetch('https://rickandmortyapi.com/api/character/')
 
     const characters = await data.json()
-    console.log(characters.results)
     setCharacters(characters.results)
   }
 
-  if (characters.length < 20 ) {
+  if (characters.length < 5 ) {
     return (
       <Container fluid className="loading">
         <section>

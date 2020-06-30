@@ -2,8 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Footer from './HomeComponents/Footer';
 import { Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-import '../styles/character.css';
-//import '../styles/footer.css';
+import '../styles/characters.css';
 
 // useState - Holds the information we are getting from an API. 
 // useEffect - Runs that fetch call when our component mounts.
@@ -11,6 +10,7 @@ import '../styles/character.css';
 function Characters() {
   useEffect(() => {
     fetchCharacters()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // The brackets mean that it is only going to run when the component mounts.
 
@@ -21,7 +21,6 @@ function Characters() {
     const data = await fetch('https://rickandmortyapi.com/api/character/')
 
     const characters = await data.json()
-    console.log(characters.results)
     setCharacters(characters.results)
   }
 
@@ -41,7 +40,7 @@ function Characters() {
       <Container fluid>
         <Row>
           {characters.map(character => (
-            <Col md="6" lg="4" xl="3">
+            <Col key={character.id} md="6" lg="4" xl="3">
               <Card className="text-center" key={character.id}>
               <Card.Img variant="top" src={character.image} />
                 <Card.Body>
@@ -49,11 +48,9 @@ function Characters() {
                   <Card.Text>
                     Gender: {character.gender} <br />
                     Species: {character.species} <br />
-                    Origin: {character.origin.name} <br />
-                    Status: {character.status}
                   </Card.Text>
                   <Button variant="primary">
-                    <Link to={`/characters/${character.id}`}>Details</Link>
+                    <Link to={`/characters/${character.id}`}>More</Link>
                   </Button>
                 </Card.Body>
               </Card>
