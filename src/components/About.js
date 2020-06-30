@@ -17,13 +17,15 @@ function About() {
         <li>Mobile first design approach</li>
         <li>Conditional rendering</li>
         <li>Full use of version control via Github: Different branches, commits, pull requests and merges.</li>
-        <li>HTML</li>
+        <li>Async Await</li>
+        <li>Fetch</li>
         <li>Javascript</li>
         <li>CSS</li>
+        <li>HTML</li>
         <li>React</li>
         <li>React Bootstrap</li>
       </ul>
-      <p>This site is full responsive. It has been verified using the mobile friendly google test.</p>
+      <p>This site is a Single Page Application (SPA) and is full responsive. It has been verified using the mobile friendly google test.</p>
       <p>This site has an overall performance score above 95, obtained via lighthouse.</p> 
     </section>
     <Footer />

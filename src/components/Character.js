@@ -11,6 +11,7 @@ import '../styles/notfound.css';
 function Character({ match }) {
   useEffect(() => {
     fetchCharacter()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // The brackets mean that it is only going to run when the component mounts.
 
