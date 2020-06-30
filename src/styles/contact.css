@@ -1,3 +1,61 @@
 #contact {
   background-color: #158b44;
+  padding-top: 10%;
+}
+
+.profile-img img {
+  width: 45%;
+}
+
+.profile-info {
+  color: #fff;
+  margin: 5% auto;
+  text-align: left;
+}
+
+.profile-info p, a {
+  font-size: 1.2rem;
+}
+
+.profile-info a { 
+  color: #31c6dd;
+  text-decoration: none;
+}
+
+/************MEDIA QUERIES**********/
+
+/* IPADS AND TABLETS */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .profile-img img {
+    margin-top: 8%;
+    width: 65%;
+  }
+}
+
+/* SMALL SCREENS AND LAPTOPS */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .profile-img img {
+    margin-top: 8%;
+    width: 65%;
+  }
+}
+
+/* DESKTOPS AND LARGE SCREENS */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .profile-img img {
+    margin-top: 8%;
+    width: 70%;
+  }
+}
+
+/* EXTRA LARGE SCREENS AND TV */
+@media only screen and (min-width: 1201px) {
+  .profile-img img {
+    margin-top: 8%;
+    width: 70%;
+  }
+
+  .profile-info p, a {
+    font-size: 1.4rem;
+  }
 }
