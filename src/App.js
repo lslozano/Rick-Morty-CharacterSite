@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import About from './components/About';
+import Contact from './components/Contact';
 import Characters from './components/Characters';
 import Character from './components/Character';
 import NotFound from './components/NotFound';
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/characters" component={Characters}/>
+          <Route exact path="/contact" component={Contact} />
           {/* Using colon and a name means it is a parameter. It receives an argument. */}
           <Route exact path="/characters/:id" component={Character}/>
           <Route component={NotFound} />
