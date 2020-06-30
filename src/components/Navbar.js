@@ -16,7 +16,7 @@ function Navbar() {
         <Link to="/characters" className="link">
           <li>Characters</li>
         </Link>
-        <Link to="/characters" className="link">
+        <Link to="/contact" className="link">
           <li>Contact</li>
         </Link>
       </ul>
