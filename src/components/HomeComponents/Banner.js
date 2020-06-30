@@ -11,7 +11,7 @@ function Banner() {
           <Col className="cta" xs={12} md={6}>
             <h1 className="big-heading">All Rick and Morty characters in one place!</h1>
             <Link to="/characters">
-              <Button variant="info">Search characters</Button>
+              <Button variant="dark">Search characters</Button>
             </Link>
           </Col>
           <Col xs={12} md={6}>

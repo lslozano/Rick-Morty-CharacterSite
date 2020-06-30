@@ -1,5 +1,5 @@
 h3, p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
   margin: 0;
 }
@@ -22,7 +22,7 @@ h3, p {
 }
 
 .disclaimer {
-  font-size: 0.7rem;
+  font-size: 1rem;
   text-align: left;
   margin-bottom: 0;
 }
@@ -46,7 +46,7 @@ h3, p {
   }
 
   .disclaimer {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   }
 }
 
@@ -61,7 +61,7 @@ h3, p {
   }
 
   .disclaimer {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   }
 }
 

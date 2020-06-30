@@ -26,7 +26,7 @@ function About() {
         <li>React Bootstrap</li>
       </ul>
       <p>This site is a Single Page Application (SPA) and is full responsive. It has been verified using the mobile friendly google test.</p>
-      <p>This site has an overall performance score above 95, obtained via lighthouse.</p> 
+      <p>This site has an overall score of 90; with Accessibility, Best Practices and SEO above 90. Score obtained via lighthouse.</p> 
     </section>
     <Footer />
     </>
