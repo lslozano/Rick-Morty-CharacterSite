@@ -14,7 +14,7 @@ function NotFound() {
           </Link>
         </Col>
         <Col lg="6" className="">
-          <h1>This dimension does not exists.</h1>
+          <h1>There is nothing here.</h1>
           <Link to="/">
               <Button variant="info">Back home</Button>
             </Link>
