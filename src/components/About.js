@@ -24,6 +24,7 @@ function About() {
         <li>HTML</li>
         <li>React</li>
         <li>React Bootstrap</li>
+        <li>Deployed on Netlify</li>
       </ul>
       <p>This site is a Single Page Application (SPA) and is full responsive. It has been verified using the mobile friendly google test.</p>
       <p>This site has an overall score of 90; with Accessibility, Best Practices and SEO above 90. Score obtained via lighthouse.</p> 
